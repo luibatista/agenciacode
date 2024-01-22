@@ -65,14 +65,13 @@
 			<a href="https://www.instagram.com/agen.code/" target="_blank" style="color: black;"><i class="fab fa-instagram";></i></a>
 		</div><!--icons-menu-->
 	<div class="formulario">
-		<form action="enviar_email.php" method="post">
-			<input type="text" name="nome" placeholder="Nome...">
-			<input type="text" name="email" placeholder="E-mail...">
-			<textarea name="mensagem" placeholder="Sua mensagem..."></textarea>
-			<input type="submit" name="acao" value="Enviar mensagem!">
-		</form>
-		
-	</div>
+				<form id="meuFormulario">
+					<input type="text" id="nome" name="nome" placeholder="Nome...">
+					<input type="text" id="email" name="email" placeholder="E-mail...">
+					<textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..."></textarea>
+					<input type="button" onclick="criarLinkMailto()" value="Enviar mensagem!">
+				</form>
+			</div>
 </div>
 </section>
 
@@ -111,8 +110,8 @@
     var destinatario = 'luisgustavobatista80@gmail.com';
 
     // Criar o link mailto
-    var assunto = encodeURIComponent('Assunto do E-mail');
-    var corpo = encodeURIComponent('Nome: ' + nome + 'Mensagem: ' + mensagem);
+    var assunto = encodeURIComponent('Vim pelo site');
+    var corpo = encodeURIComponent(mensagem);
 
     var linkMailto = 'mailto:' + destinatario + '?subject=' + assunto + '&body=' + corpo;
 
