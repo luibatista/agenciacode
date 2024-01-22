@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -81,44 +81,47 @@
 <footer>
     <p>Feito com <i class="fa-sharp fa-solid fa-heart"></i> por Agência Code+!</p>
 </footer>
+	<script>
 
-<script>
-	
+	document.getElementById('linkContato2').addEventListener('click', function(event) {
+    	handleLinkClick(event);
+		});
+
 	document.getElementById('linkContato').addEventListener('click', function(event) {
-            event.preventDefault(); // Impede que o link execute o comportamento padrão (navegar para outra página)
-            document.getElementById('finalDaPagina').scrollIntoView({ behavior: 'smooth' });
-        });
-
-  const slider = document.getElementById('slider');
-  let currentIndex = 0;
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slider.children.length;
-    updateSlider();
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
-    updateSlider();
-  }
-
-  function updateSlider() {
-    const translateValue = -currentIndex * 100 + '%';
-    slider.style.transform = `translateX(${translateValue})`;
-  }
-
-  function autoAdvance() {
-    nextSlide();
-    setTimeout(autoAdvance, 15000); // 15 seconds
-  }
-
-  setTimeout(autoAdvance, 15000); // Start auto-advance after 15 seconds
-
+    	handleLinkClick(event);
+		});
 
 	document.getElementById('linkContato1').addEventListener('click', function(event) {
+    	handleLinkClick(event);
+		});
+
+	function handleLinkClick(event) {
 		event.preventDefault(); // Impede que o link execute o comportamento padrão (navegar para outra página)
 		document.getElementById('finalDaPagina').scrollIntoView({ behavior: 'smooth' });
-	});
-</script>
+	}
+
+
+	function criarLinkMailto() {
+    // Obter os valores do formulário
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+
+    // Configurar o destinatário do e-mail
+    var destinatario = 'luisgustavobatista80@gmail.com';
+
+    // Criar o link mailto
+    var assunto = encodeURIComponent('Assunto do E-mail');
+    var corpo = encodeURIComponent('Nome: ' + nome + 'Mensagem: ' + mensagem);
+
+    var linkMailto = 'mailto:' + destinatario + '?subject=' + assunto + '&body=' + corpo;
+
+    // Abrir o cliente de e-mail padrão
+    window.location.href = linkMailto;
+}
+
+
+
+    </script>
 </body>
 </html>
