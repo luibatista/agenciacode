@@ -1,0 +1,389 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+}
+
+body{
+	background-color: #f7f5f5;
+}
+
+.center{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+header{
+	padding: 30px 0;
+	background-color: rgb(230, 225, 225);
+}
+
+.clear{clear: both;}
+
+
+.logo{
+	width: 20%;
+	float: left;
+}
+
+.logo h2{
+	color: #535b6c;
+	font-size: 23px;
+}
+
+
+.menu{
+	padding-top: 3px;
+	float: left;
+	width: 70%;
+	text-align: center;
+}
+
+.menu a{
+	margin:0px 30px;
+	text-decoration: none;
+	color: #3c3f4b;
+}
+
+.select{
+	border-bottom: 2px solid #f75915;
+}
+
+nav.mobile-venda{
+	display: none;
+}
+
+.icons-menu{
+	text-decoration: none;
+	font-size: 27px;
+	float: left;
+	width: 10%;
+}
+
+.icons-menu a{
+	margin:0 10px;
+}
+
+.icons-menu-contato {
+	text-align: center;
+}
+.icons-menu-contato i {
+	font-size: 50px;
+	margin: 0 20px;
+	color: #333;
+}
+
+.topo-1{
+	float: left;
+	width: 60%;
+}
+
+.topo-1 h3{
+	color: #535b6c;
+}
+
+.topo-1 h1{
+	margin:20px 0;
+	color:#525dad;
+	font-size: 56px;
+}
+
+h1.sobre{
+	margin:20px 0;
+	color:#525dad;
+	font-size: 56px;
+}
+
+.topo-1 h1 > span{
+	color: #f75915;
+}
+
+.topo-1 p{
+	color: #5d6b81;
+}
+.topo-2{
+	float: left;
+	width: 40%;
+}
+
+.topo-2 img{
+	width: 100%;
+	max-width: 100%;
+}
+
+.topo-1 a{
+	border-radius: 4px;
+  background-color: #f75915;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 15px;
+  color: white;
+}
+
+section.servicos{
+	padding: 40px 0;
+}
+
+.chamada-servicos{
+	margin-top:50px;
+	text-align: center;
+}
+
+.chamada-servicos h4{
+	font-size: 16px;
+	color: #535b6c;
+}
+
+.chamada-servicos h1{
+	font-size: 55px;
+	color: #525dad;
+}
+
+.descricao-servicos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.img-servicos{
+	width: 60%;
+}
+.img-servicos img{
+	max-width: 100%;
+}
+
+.detalhes-servicos{
+	padding: 30px 30px;
+	width: 40%;
+}
+
+.detalhes-servicos h3{
+	color:#535b6c;
+	font-size: 26px;
+	font-weight: normal;
+	margin:10px 0;
+}
+
+
+.detalhes-servicos p{
+	color:	#9299a5;
+	font-size: 14px;
+
+
+}
+
+.texto-depoimento{
+	float: left;
+	width: 50%;
+}
+
+.texto-depoimento h3{
+	color: #535b6c;
+	font-size: 33px;
+	font-weight: normal;
+}
+
+.texto-depoimento h4{
+	font-size: 22px;
+	color: #9299a5;
+}
+
+.img-depoimento{
+	float: left;
+	width: 50%;
+}
+
+.img-depoimento img{max-width: 100%;}
+
+.img-showcase{
+	width: 100%;
+	text-align: center;
+}
+
+.img-showcase img{
+	max-width: 100%;
+}
+
+
+.formulario{
+	max-width: 700px;
+	margin:30px auto;
+}
+
+.formulario input[type=text]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	margin:10px 0;
+	padding-left: 10px;
+}
+
+
+.formulario input[type=submit]{
+	background-color: #f75915;
+	cursor: pointer;
+	color: white;
+	padding: 10px 15px;
+	border:0;
+	width: 100%;
+}
+
+.formulario textarea{
+	width: 100%;
+	height: 120px;
+	border:1px solid #ccc;
+	padding: 10px;
+}
+
+footer{
+	text-align: center;
+	padding: 30px 0;
+	color: #535b6c;
+}
+
+#finalDaPagina {
+	text-align: center;
+	font-size: 24px;
+	padding: 20px; /* Adicione um preenchimento opcional para melhor visualização */
+}
+
+.container{
+	max-width:78vw ;
+	margin: 0 auto;
+}
+
+  #slider{
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+section.sobre{
+	min-height: 90%;
+	padding:60px 2% 20px 2%;
+}
+
+section.sobre .container{
+	max-width: 840px;
+	margin-top:30px;
+}
+
+section.sobre .img-destaque-sobre{
+	width: 100%;
+	padding-top:60%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section.sobre .descricao-autor{
+	margin-top:20px;
+}
+
+.descricao-autor h2{
+	font-size: 24px;
+}
+
+.descricao-autor p{
+	line-height: 28px;
+	font-size: 20px;
+	margin-top:10px;
+}
+
+#end{
+	margin-bottom: 100px;
+}
+.menu a {
+    margin: 0px 30px;
+    text-decoration: none;
+    color: #3c3f4b;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, rgba(247, 89, 21, 0.7), transparent); /* Utiliza linear gradient para a animação do background-color e ajusta a transparência */
+    transition: width 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave na largura e na cor */
+}
+
+.menu a:hover {
+    color: black; /* Altera a cor do texto ao passar o mouse */
+}
+
+.menu a:hover::before {
+    width: 100%; /* Largura total ao passar o mouse */
+} 
+
+@media screen and (max-width: 768px){
+
+	.menu{
+		display: none;
+	}
+
+	nav.mobile-venda{
+		display: block;
+	}
+
+	.logo{
+		margin-left: 15px;
+		width: 50%;
+		margin-top: 20px;
+	}
+
+	
+	nav.mobile-venda ul {
+		list-style: none;
+	  }
+	
+	  nav.mobile-venda li {
+		margin-top: 26px;
+		float: right;
+		margin-right: 17px;
+		font-size: 15px;
+		font-style: italic;
+	  }
+	
+	  nav.mobile-venda li a {
+		color: #333;
+		text-decoration: none;
+		overflow: hidden;
+	  }
+
+	 
+	.icons-menu{
+		display: none;
+	}
+
+	.img-depoimento,
+	.texto-depoimento{
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+
+	.img-servicos,
+	.detalhes-servicos{
+		width: 100%;
+	}
+	.topo-2,
+	.topo-1{
+		width: 100%;
+		margin:20px 0;
+	}
+
+	h1.sobre,.chamada-servicos h1{
+		font-size: 45px;
+	}
+
+	.descricao-autor p{
+		font-size: 17px;
+	}
+
+}
