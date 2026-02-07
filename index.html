@@ -10,24 +10,35 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <canvas id="tech-canvas"></canvas>
+
 	<header>
 		<div class="center">
 			<div class="logo">
 				<h2>Agência <span style="color: #525dad;">co</span><span style="color: #f75915;">de+</span></h2>
-			</div><div class="menu">
+			</div>
+
+			<div class="menu">
 				<a class="select" href="#">Home</a>
 				<a href="sobre.html">Sobre</a>
-			</div><nav class="mobile-venda">
+				<a href="#" id="linkContato1">Contato</a>
+			</div>
+
+			<nav class="mobile-venda">
 				<ul>
+					<li><a id="linkContato" href="#">Contato</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
 					<li class="select"><a href="#">Home</a></li>
 				</ul>
-			</nav><div class="icons-menu">
-				<a href="https://www.instagram.com/agen.code/" target="_blank" style="color: black;"><i class="fab fa-instagram";></i></a>
-			</div><div class="clear"></div>
+			</nav>
 
-			
-		</div></header>
+			<div class="icons-menu">
+				<a href="https://www.instagram.com/agen.code/" target="_blank" style="color: black;"><i class="fab fa-instagram";></i></a>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</header>
 	<br />
 	<br />
 	<section class="topo">
@@ -48,10 +59,15 @@
 				</p>
 				<br />
 				<a href="#" id="linkContato2">Entrar em contato!</a>
-			</div><div class="topo-2">
+			</div>
+			<div class="topo-2">
 				<img src="image/image-hero.png" />
-			</div><div class="clear"></div>
-		</div></section><section class="servicos">
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+
+	<section class="servicos">
 		<div class="center">
 			<div class="chamada-servicos">
 				<h4>Nossos serviços</h4>
@@ -115,7 +131,8 @@
 			<div class="icons-menu-contato">
 				<a href="https://api.whatsapp.com/send?phone=+5577998385196&text=Ol%C3%A1%2C%20como%20vai%3F%20Gostaria%20de%20falar%20sobre%20um%20projeto." target="_blank"><i class="fab fa-whatsapp" style="color: #1cd94b;"></i></a>
 				<a href="https://www.instagram.com/agen.code/" target="_blank" style="color: black;"><i class="fab fa-instagram";></i></a>
-			</div><div class="formulario">
+			</div>
+			<div class="formulario">
 				<form id="meuFormulario">
 					<input type="text" id="nome" name="nome" placeholder="Nome...">
 					<input type="text" id="email" name="email" placeholder="E-mail...">
@@ -125,7 +142,6 @@
 			</div>
 			
 		</div>
-	</div>
 	</section>
 
 	<footer>
@@ -133,7 +149,6 @@
 	</footer>
 
 	<script>
-
 	document.getElementById('linkContato2').addEventListener('click', function(event) {
     	handleLinkClick(event);
 		});
@@ -151,7 +166,6 @@
 		document.getElementById('finalDaPagina').scrollIntoView({ behavior: 'smooth' });
 	}
 
-
 	function criarLinkMailto() {
     var nome = document.getElementById('nome').value;
     var email = document.getElementById('email').value;
@@ -166,8 +180,7 @@
 
     window.location.href = linkMailto;
 }
-
     </script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

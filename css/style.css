@@ -246,7 +246,7 @@ footer{
 #finalDaPagina {
 	text-align: center;
 	font-size: 24px;
-	padding: 20px; /* Adicione um preenchimento opcional para melhor visualização */
+	padding: 20px;
 }
 
 .container{
@@ -308,16 +308,16 @@ section.sobre .descricao-autor{
     left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(to right, rgba(247, 89, 21, 0.7), transparent); /* Utiliza linear gradient para a animação do background-color e ajusta a transparência */
-    transition: width 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave na largura e na cor */
+    background: linear-gradient(to right, rgba(247, 89, 21, 0.7), transparent);
+    transition: width 0.3s ease, color 0.3s ease;
 }
 
 .menu a:hover {
-    color: black; /* Altera a cor do texto ao passar o mouse */
+    color: black;
 }
 
 .menu a:hover::before {
-    width: 100%; /* Largura total ao passar o mouse */
+    width: 100%;
 } 
 
 @media screen and (max-width: 768px){
@@ -386,4 +386,47 @@ section.sobre .descricao-autor{
 		font-size: 17px;
 	}
 
+}
+
+.topo-1, .topo-2, .chamada-servicos, .detalhes-servicos, .img-servicos, .texto-depoimento, .img-showcase {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.topo-1 h1 span:first-child {
+    border-right: 3px solid #f75915;
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { border-color: #f75915; }
+    50% { border-color: transparent; }
+    100% { border-color: #f75915; }
+}
+
+#tech-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+header {
+    position: relative; 
+    z-index: 10;
+    background-color: rgba(230, 225, 225, 0.95);
+}
+
+section.topo {
+    position: relative;
 }
