@@ -9,21 +9,25 @@ document.addEventListener('DOMContentLoaded', () => {
     function typeEffect() {
         const currentWord = words[wordIndex];
         
-        if (isDeleting) {
-            textElement.textContent = currentWord.substring(0, charIndex--);
-        } else {
-            textElement.textContent = currentWord.substring(0, charIndex++);
-        }
+        textElement.textContent = currentWord.substring(0, charIndex);
 
         let typeSpeed = isDeleting ? 100 : 200;
 
-        if (!isDeleting && charIndex === currentWord.length) {
-            typeSpeed = 2000;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-            typeSpeed = 500;
+        if (!isDeleting) {
+            if (charIndex < currentWord.length) {
+                charIndex++; 
+            } else {
+                isDeleting = true;
+                typeSpeed = 2000; 
+            }
+        } else {
+            if (charIndex > 0) {
+                charIndex--; 
+            } else {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 600; 
+            }
         }
 
         setTimeout(typeEffect, typeSpeed);
